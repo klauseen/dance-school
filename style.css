@@ -65,22 +65,25 @@ nav ul li a:hover, nav ul li a.active{
     padding: 12px 28px;
     font-weight: bold;
     border-radius: 4px;
+    margin-top:24px;
+    text-decoration: none;
 }
 
-.btn :hover{
+.btn:hover{
     background-color: blueviolet;
 }
 
 .about{
     display: flex;
-    align-item:center;
+    align-items:center;
     gap: 40px;
     padding:60px 40px;
     background-color:#ebe6b5;
 }
 
 .about-text{
-    width:50%
+    width:50%;
+    text-align: center;
 }
 
 .about-text h2{
@@ -93,6 +96,7 @@ nav ul li a:hover, nav ul li a.active{
     font-size: 1.1rem;
     margin-bottom: 32px;
     line-height: 1.8;
+    
 }
 
 .about-image{
@@ -157,5 +161,46 @@ footer{
     text-align: center;
     font-size: 0.8rem;
     padding: 24px;
+}
+
+.curs{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 40px;
+    background-color: #ebe6b5;
+}
+
+.reversed-curs{
+    display:flex;
+    flex-direction:  row-reverse;
+    align-items: center;
+    gap:40px;
+    padding: 60px 40px;
+}
+
+.curs-image{
+    width: 50%;
+}
+
+.curs-image img{
+    width: 100%;
+    border-radius:8px;
+}
+
+.curs-text{
+    width: 50%;
+}
+
+.curs-text h3{
+    font-size: 1.5rem;
+    margin-bottom:16px;
+    color:black;
+}
+
+.curs-text p{
+    font-size:1rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
 }
 
