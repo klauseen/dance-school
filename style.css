@@ -6,7 +6,7 @@
 
 body{
     font-family: Arial, sans-serif;
-    background-color:#d9cc9e;
+    background-color:rgb(233, 191, 132);
     color: #333;
 }
 
@@ -14,7 +14,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: burlywood;
+    background-color: #AC8F69;
     padding: 16px 40px;
     width: 100%;
 }
@@ -43,7 +43,7 @@ nav ul li a:hover, nav ul li a.active{
 
 .welcome{
     display:block;
-    color: white;
+    color: #AC8F69 ;
     text-align: center;
     padding: 80px 40px;
     width:100%;
@@ -80,7 +80,7 @@ nav ul li a:hover, nav ul li a.active{
     align-items:center;
     gap: 40px;
     padding:60px 40px;
-    background-color:#ebe6b5;
+    background-color:rgb(233, 204, 167);
 }
 
 .about-text{
@@ -135,7 +135,7 @@ nav ul li a:hover, nav ul li a.active{
 
 .courses h2{
     font-size:1.8rem;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
     color: black;
 }
 
@@ -148,10 +148,13 @@ nav ul li a:hover, nav ul li a.active{
 }
 
 .course-card{
-    background-color: #ebe6b5;
+    background-color: rgb(233, 204, 167);
     padding: 24px;
     width: 28%;
     border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
 }
 
 .course-card h3{
@@ -159,7 +162,7 @@ nav ul li a:hover, nav ul li a.active{
 }
 
 footer{
-    background-color: burlywood;
+    background-color: #AC8F69;
     text-align: center;
     font-size: 0.8rem;
     padding: 24px;
@@ -170,7 +173,9 @@ footer{
     align-items: center;
     gap: 40px;
     padding: 60px 40px;
-    background-color: #ebe6b5;
+    background-color: rgb(233, 204, 167);
+    overflow:hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
 .reversed-curs{
@@ -179,6 +184,7 @@ footer{
     align-items: center;
     gap:40px;
     padding: 60px 40px;
+    
 }
 
 .curs-image{
@@ -218,11 +224,13 @@ footer{
     display:flex;
     align-items: center;
     gap:24px;
-    background-color: #ebe6b5;
+    background-color: rgb(233, 204, 167);
     border-radius:8px;
     padding:24px;
     width:calc(50% - 20px);
     box-sizing:border-box;
+    overflow:hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 .instructor-card img{
@@ -252,11 +260,13 @@ footer{
 }
 
 .eveniment-card{
-    background-color: #ebe6b5;
+    background-color: rgb(233, 204, 167);
     border-radius:8px;
     overflow: hidden;
     width:calc(33.33% - 28px);
     box-sizing:border-box;
+    overflow:hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 .eveniment-card img{
@@ -264,6 +274,8 @@ footer{
     width:100%;
     height:200px;
     object-fit:contain;
+    overflow:hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 .eveniment-info{
@@ -287,7 +299,8 @@ footer{
     display:flex;
     flex-direction: column;
     align-items: center;
-    gap:20px;
+    gap:20px; 
+    background-color:rgb(233, 204, 167);
 }
 
 .galerie-mare img{
@@ -295,6 +308,8 @@ footer{
     height:350px;
     object-fit: cover;
     border-radius: 8px;
+    overflow:hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .galerie-grid{
@@ -308,8 +323,8 @@ footer{
     width:calc(33.33% - 20px);
     height: 220px;
     object-fit:cover;
-    border-radius:8px;
-    background-color: #ebe6b5;
+    border-radius:8px;overflow:hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .galerie-bottom{
@@ -323,4 +338,59 @@ footer{
     height:200px;
     object-fit:cover;
     border-radius:8px;
+    overflow:hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.container{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.contact-info{
+    flex:1 1 400px;
+    background-color:rgb(233, 204, 167);
+    color:black;
+    padding:40px;
+}
+
+.info-item{
+    display:flex;
+    flex-direction: column;
+    padding:60px 40px;
+    margin-top:100px;
+    justify-content: center;
+}
+
+.info-item p{
+    font-size:1.2rem;
+    line-height: 1.6;
+}
+
+.contact-form{
+    flex: 1 1 400px;
+    padding: 40px;
+}
+
+.contact-input{
+    margin-bottom:20px;
+}
+
+.contact-input input , .contact-input textarea{
+    width:100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius:8px;
+    outline:none;
+    font-size: 0.9rem;
+    transition:0.3s;
+}
+
+.contact-input input:focus, .contact-input textarea:focus{
+    border-color:#3498db;
+    box-shadow: 0 0 5px rgba(52, 152 , 219 , 0.3);
 }
