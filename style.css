@@ -16,6 +16,7 @@ nav{
     align-items: center;
     background-color: burlywood;
     padding: 16px 40px;
+    width: 100%;
 }
 
 nav .logo{
@@ -41,10 +42,11 @@ nav ul li a:hover, nav ul li a.active{
 }
 
 .welcome{
-    
+    display:block;
     color: white;
     text-align: center;
     padding: 80px 40px;
+    width:100%;
 }
 
 .welcome h1{
@@ -239,4 +241,43 @@ footer{
 .instructor-info{
     font-size: 0.9rem;
     line-height: 1.6;
+}
+
+.evenimente{
+    padding: 60px 40px;
+    display: flex;
+    flex-wrap:wrap;
+    gap: 28px;
+    justify-content: center;
+}
+
+.eveniment-card{
+    background-color: #ebe6b5;
+    border-radius:8px;
+    overflow: hidden;
+    width:calc(33.33% - 28px);
+    box-sizing:border-box;
+}
+
+.eveniment-card img{
+    margin-top: 10px;
+    width:100%;
+    height:200px;
+    object-fit:contain;
+}
+
+.eveniment-info{
+    padding:20px;
+}
+
+.eveniment-info h3{
+    font-size: 1.1rem;
+    margin-bottom:10px;
+    color:black;
+}
+
+.eveniment-info p{
+    font-size:0.9rem;
+    line-height: 1.6;
+    margin-bottom: 6px;
 }
