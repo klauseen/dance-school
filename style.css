@@ -207,14 +207,10 @@ footer{
 .instructori{
     padding: 60px 40px;
     display:flex;
-    flex-direction: column;
+    flex-wrap:wrap;
     gap:40px
 }
 
-.instructori-row{
-    display:flex;
-    gap:40px;
-}
 
 .instructor-card{
     display:flex;
@@ -223,7 +219,8 @@ footer{
     background-color: #ebe6b5;
     border-radius:8px;
     padding:24px;
-    width:50%;
+    width:calc(50% - 20px);
+    box-sizing:border-box;
 }
 
 .instructor-card img{
