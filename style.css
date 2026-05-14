@@ -443,3 +443,44 @@ footer{
     color:red;
     margin-bottom: 16px;
 }
+
+.dashboard{
+    padding: 60px 40px;
+    text-align:center;
+}
+
+.dashboard h2{
+    font-size:2rem;
+    margin-bottom:16px;
+    color:black;
+}
+
+.dashboard p{
+    margin-bottom:40px;
+    font-size:1.1rem;
+}
+
+.dashboard-grid{
+    display:flex;
+    gap:24px;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.dashboard-card{
+    background-color:rgb(233, 204, 167);
+    border-radius:8px;
+    padding:40px;
+    width:250px;
+    text-decoration:none;
+    color:black; 
+}
+.dashboard-card:hover{
+    background-color: purple;
+    color:white;
+}
+
+.dashboard-card h3{
+    font-size:1.3rem;
+    margin-bottom:12px;
+}
